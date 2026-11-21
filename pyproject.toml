@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exitticket"
+version = "0.1.0"
+description = "课堂出门条：一条命令生成 A4 可打印、可裁剪的课后反馈卡"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = [
+  "exit-ticket",
+  "classroom",
+  "teacher",
+  "education",
+  "print",
+  "cli",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+exitticket = "exitticket.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/exitticket"
+Source = "https://github.com/eastyou/exitticket"
+
+[tool.setuptools]
+packages = ["exitticket"]
